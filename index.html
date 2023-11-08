@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    /> -->
     <title>figma work</title>
   </head>
   <body>
@@ -12,18 +19,19 @@
       <div class="navbar1">
         <img src="./assets/images/sample/hero/logo.svg" alt="" />
 
-        <div class="navcontent1">
+        <div id="home" class="navcontent1">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Drivers</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">OrderRide</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#cars">Order Ride</a></li>
+            <li><a href="#drivers">Our Drivers</a></li>
+            <li><a href="#galcon">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
+          <!-- <hr> -->
         </div>
       </div>
-      <div class="content1">
+      <div data-aos="zoom-in" data-aos-duration="3000" class="content1">
         <h1>The Best Chaffeur<br />Company</h1>
         <br />
         <p>
@@ -36,8 +44,8 @@
       </div>
     </div>
     <div class="container2">
-      <img id="img" src="./assets/images/Airport-Limo 1@2x.svg" alt="" />
-      <div class="content2">
+      <img id="about" id="img" src="./assets/images/Airport-Limo 1@2x.svg" alt="" />
+      <div data-aos="zoom-in-left" data-aos-duration="3000" class="content2">
         <strong><h2 class="p">Who Are we</h2></strong>
         <br /><br />
         <h1>
@@ -56,7 +64,7 @@
     </div>
 
     <div class="container3">
-      <div class="content3">
+      <div data-aos="zoom-in-right" data-aos-duration="3000" class="content3">
         <h2>Our Mission</h2>
         <br />
         <h1>
@@ -100,8 +108,9 @@
       </div>
       <img id="img2" src="./assets/images/background2.svg" alt="" />
     </div>
-    <div class="container4">
+    <div id="cars" class="container4">
       <h1>Our Ride Pricing</h1>
+      <hr id="line">
       <p>
         Our department is here to ensure personalized guidance. Our smart team
         takes care of<br />
@@ -114,6 +123,8 @@
           <div>
             <h2>Regular Car</h2>
             <img
+              data-aos="zoom-in" 
+              data-aos-duration="3000"
               src="./assets/images/Black_Mercedes_Benz_S_Class_2012_Car_PNG_Clipart-106 1.svg"
               alt=""
             />
@@ -142,6 +153,8 @@
           <div>
             <h2>Jeep</h2>
             <img
+              data-aos="zoom-in" 
+              data-aos-duration="3000"
               src="./assets/images/Black_Mercedes_Benz_GL_2013_Car_PNG_Clipart-105 1.svg"
               alt=""
             />
@@ -169,7 +182,7 @@
         <div class="minivan">
           <div>
             <h2>Mini Van</h2>
-            <img src="./assets/images/pngwing 1.svg" alt="" />
+            <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/pngwing 1.svg" alt="" />
           </div>
 
           <h2>Car Details</h2>
@@ -194,7 +207,7 @@
         <div class="limosine">
           <div>
             <h2>Limosine</h2>
-            <img src="./assets/images/HOR_XB1_Cadillac_XTS 1.svg" alt="" />
+            <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/HOR_XB1_Cadillac_XTS 1.svg" alt="" />
           </div>
 
           <h2>Car Details</h2>
@@ -220,13 +233,14 @@
     </div>
     <div class="container5">
       <div class="content4">
-        <h1>Make your trip an unforgettable<br />moment together.</h1>
-        <button type="submit">Get in Touch Now</button>
+        <h1 data-aos="zoom-in-right" data-aos-duration="3000" >Make your trip an unforgettable<br />moment together.</h1>
+        <button data-aos="zoom-in-left" data-aos-duration="3000" type="submit">Get in Touch Now</button>
       </div>
     </div>
 
-    <div class="container6">
+    <div id="drivers" class="container6">
       <h1 class="h1">Our Expert Drivers</h1>
+      <hr>
       <br />
       <p>
         Our department is here to ensure personalized guidance. Our smart team
@@ -237,29 +251,32 @@
       <br />
       <div class="images">
         <div id="i">
-          <img src="./assets/images/Rectangle 29.svg" alt="" />
-          <p>Nashida Martinez<br />Chauffeur</p>
+          <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Rectangle 29.svg" alt="" />
+          <p>Bryan Chambers<br />Chauffeur</p>
         </div>
         <div id="ii">
-          <img src="./assets/images/man2.svg" alt="" />
+          <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/man2.svg" alt="" />
           <p>Nashida Martinez<br />Chauffeur</p>
         </div>
         <div id="iii">
-          <img src="./assets/images/man1.svg" alt="" />
-          <p>Nashida Martinez<br />Chauffeur</p>
+          <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/man1.svg" alt="" />
+          <p>Timmy Boyd<br />Chauffeur</p>
         </div>
         <div id="iv">
-          <img
+          <img data-aos="zoom-in" data-aos-duration="3000"
             src="./assets/images/photo-of-man-in-black-suit-posing-2474307 1.svg"
             alt=""
           />
-          <p>Nashida Martinez<br />Chauffeur</p>
+          <p>Jamie Matthew<br />Chauffeur</p>
         </div>
       </div>
     </div>
     <div class="container7">
       <div id="galcon">
         <h1>Gallery</h1>
+        <br>
+        <hr id="hr">
+        <br>
         <p>
           Our department is here to ensure personalized guidance. Our smart team
           takes care of <br />
@@ -267,10 +284,12 @@
           finish
         </p>
         <h3>
-          <p>Show All</p>
+          <p style="color: blue;">Show All</p>
           <p>Events</p>
           <p>Travels</p>
         </h3>
+        <hr>
+        <br> <br>
       </div>
       <div id="gallery">
         <img id="bi3" src="./assets/images/bimage3.svg" alt="" />
@@ -284,18 +303,18 @@
     </div>
     <div class="container8">
       <div id="icons">
-        <img src="./assets/images/Volkswagen.svg" alt="" />
-        <img src="./assets/images/Chevrolet.svg" alt="" />
-        <img src="./assets/images/Ford.svg" alt="" />
-        <img src="./assets/images/Jeep.svg" alt="" />
-        <img src="./assets/images/tesla-motors.svg" alt="" />
-        <img src="./assets/images/toyota.svg" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Volkswagen.svg" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Chevrolet.svg" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Ford.svg" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Jeep.svg" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/tesla-motors.svg" alt="" />
+        <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/toyota.svg" alt="" />
       </div>
       <p id="p">testimonials</p>
       <h1>What Clients Say</h1>
       <div id="comment">
         <div>
-          <div id="div1">
+          <div data-aos="fade-down-right" data-aos-duration="3000" id="div1">
             <strong>"</strong>
             <p>
               I know I can count on your service if I<br />need my project done
@@ -304,12 +323,12 @@
             </p>
           </div>
           <br /><br /><br />
-          <img src="./assets/images/Ellipse 2.svg" alt="" />
+          <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Ellipse 2.svg" alt="" />
           <h2>Lewis Jane</h2>
           <p>Photographer</p>
         </div>
         <div>
-          <div id="div1">
+          <div data-aos="zoom-in" data-aos-duration="3000" id="div11">
             <strong>"</strong>
             <p>
               I know I can count on your service if I<br />need my project done
@@ -318,12 +337,12 @@
             </p>
           </div>
           <br /><br /><br />
-          <img src="./assets/images/Ellipse 3.svg" alt="" />
+          <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Ellipse 3.svg" alt="" />
           <h2>Ben Bennaki</h2>
           <p>Sector CEO</p>
         </div>
         <div>
-          <div id="div1">
+          <div data-aos="fade-down-left" data-aos-duration="3000" id="div1">
             <strong>"</strong>
             <p>
               I know I can count on your service if I<br />need my project done
@@ -332,51 +351,52 @@
             </p>
           </div>
           <br /><br /><br />
-          <img src="./assets/images/Ellipse 4.svg" alt="" />
+          <img data-aos="zoom-in" data-aos-duration="3000" src="./assets/images/Ellipse 4.svg" alt="" />
           <h2>Sandra Kay</h2>
           <p>Makeup Artist</p>
         </div>
       </div>
     </div>
     <div class="container9">
-      <div id="contact">
-        <h1>Contact Us</h1>
+      <div data-aos="zoom-in" data-aos-duration="3000" id="contact">
+        <h1>Contact Us</h1> <hr><br>
         <p>
           If you have any questions, you can contact with us so that<br />we can
           give you a satisfying answer.
         </p>
         <br><br><br>
-        <form action="your name" method="post">
-          <label>Your Name:</label>
-          <input type="text" name="Your Name" /><br />
-        </form>
-        <form action="" method="post">
-          <label> Your phone number:</label>
-          <input type="number" name="your number" /><br />
-        </form>
-        <form>
-          <label>Your Message:</label><br />
-          <textarea name="Your Message" id="" cols="30" rows="10"></textarea
-          ><br />
-        </form>
-        <br><br>
-        <div id="robot">
-          <h2>i'm not a robot</h2>
+        <div class="input">
+          <input type="text" placeholder="Name" id="tex1">
+          <input type="text" placeholder="Email" id="tex2">
         </div>
+        <div id="contentinput">
+          <input type="text" placeholder="Phone number" id="tex3"> <br>
+
+          <input type="text" placeholder="Your message" id="tex4"> <br>
+
+          <button id="robot">
+            <input type="checkbox" id="tex5">
+            <label for="">i'm not a robot</label>
+          </button> <br>
+        </div>  
 
         <button type="submit">submit</button>
       </div>
       <div id="map">
-        <div>
-          <p>
-            40°44'19.7"N 73°39'44.9"W<br />P8QQ+G2 Garden City Park,<br />New
-            York, USA
-          </p>
-          <br /><br />
+        <div class="mapcon">
+          <div class="uno">
+            <p>
+              40°44'19.7"N 73°39'44.9"W<br />P8QQ+G2 Garden City Park,<br />New
+              York, USA
+            </p>
+          </div>
+          <div class="dos">
           <p>View larger map</p>
-          <img src="./assets/images/Vector.svg" alt="" />
           <p>Get Direction</p>
+          </div>
         </div>
+        <img src="./assets/images/Vector.svg" alt="" />
+          
       </div>
     </div>
     <div class="footer">
@@ -384,5 +404,20 @@
         <p>Copyright © 2020 Syntax Chaffeur. all rights reserved.</p>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script> -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
